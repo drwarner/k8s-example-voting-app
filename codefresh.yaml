@@ -1,0 +1,12 @@
+version: "1.0"
+stages:
+  - "sync app"
+steps:
+  sync_and_wait:
+    title: Sync ArgoCD app and wait
+    type: argocd-sync
+    arguments:
+      context: "argocd"
+      app_name: "example-voting-app"
+      wait_healthy: true   
+    stage: "sync app"
