@@ -21,9 +21,9 @@ spec:
         release: {{ .Release.Name  | quote }}
         heritage: {{ .Release.Service  | quote }}
         version: {{ .Values.image.tag | quote }}
-    spec:
-      imagePullSecrets:
-        - name: {{ .Values.image.pullSecret }}
+    # spec:
+    #   imagePullSecrets:
+    #     - name: {{ .Values.image.pullSecret }}
       containers:
         - name: result
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
