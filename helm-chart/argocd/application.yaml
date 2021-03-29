@@ -11,4 +11,9 @@ spec:
     path: .
     repoURL: 'https://github.com/drwarner/k8s-example-voting-app'
     targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
+      releaseName: example-voting-app
+  
   project: default
