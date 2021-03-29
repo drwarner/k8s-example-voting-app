@@ -241,8 +241,8 @@ spec:
       - image: drwarner/example-voting-app-worker:demo
         resources:
           limits:
-            memory: 512Mi
-            cpu: "1"
+            memory: 1024Mi
+            cpu: "2"
           requests:
             memory: 256Mi
             cpu: "0.2"        
