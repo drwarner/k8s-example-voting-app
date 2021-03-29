@@ -247,3 +247,12 @@ spec:
             memory: 256Mi
             cpu: "0.2"        
         name: worker
+        env:
+        - name: POSTGRES_SERVER
+          value: db
+        - name: POSTGRES_USERNAME
+          value: postgres
+        - name: POSTGRES_PASSWORD
+          value: postgres
+        - name: REDIS_HOST
+          value: redis
